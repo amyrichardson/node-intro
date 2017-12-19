@@ -63,6 +63,11 @@
 - [ ] package.json: add start script
     - "start": "node server/server.js"
 - [ ] set up folder structure (seen below)
+- [ ] update HTML file
+- [ ] server.js: tell everything in public folder to be available to anybody via express (the following goes above app.listen)
+    - app.use(express.static('server/public'));
+- [ ] Chrome: go to localhost:(port) to view front-end webpage
+
 
 ## FOLDERS
 - server
