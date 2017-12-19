@@ -54,8 +54,23 @@
     - const port = 45678;
     - (any number between 1000 and 99999 except 5432 because SQL uses that)
 - [ ] server.js: spin up server
-    - app.listen(port, function(){
+    - app.listen(port, ()=>{
         console.log('server up on: ', port);
     });
+    - above uses arrow function
 - [ ] Terminal: node server/server.js
     - runs the server.js file in the server folder
+- [ ] package.json: add start script
+    - "start": "node server/server.js"
+- [ ] set up folder structure (seen below)
+
+## FOLDERS
+- server
+    - public
+        - index.html
+        - scripts
+            - client.js
+        - vendors
+            - jquery-3.2.1.min.js
+        - styles
+            - style.css
